@@ -1,0 +1,52 @@
+* {
+    text-decoration:none;
+}
+
+:root{
+  --button-bg-color: #351F79;
+  --secondary: #BF5FE3;
+}
+
+#highscore {
+  color: var(--secondary);
+  text-align: left;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+}
+
+.container h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.container p {
+  padding: 15px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: var(--button-bg-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: var(--secondary);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
