@@ -14,14 +14,45 @@
         <a href="highscores.html" id="highscore">View high scores</a>
         <a id="timer">Time:</a>
     </header>
-    <div class="container">
-        <div id="home" class="flex-column flex-center"></div>
+    <div class="home container" id="home">
+        <div class="flex-column flex-center"></div>
         <h1>Coding Quiz Challenge</h1>
         <p>
-            "Try to answer the following code-related questions within the time limit." <br />
-            "Keep in mind that incorrect answers will penalize your score/time by ten seconds!"<br />
+            Try to answer the following code-related questions within the time limit. <br />
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds!<br />
         </p>
-        <a href="game.html" class="btn">Start Quiz</a>
+        <button id="start-btn" class="start-btn btn">Start Quiz</button>
+    </div>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <h1 id="question">Question</h1>
+            <div id="answer-buttons" class="ans-btn btn-area">
+                <button class="ansbtn">Answer 1</button>
+                <button class="ansbtn">Answer 2</button>
+                <button class="ansbtn">Answer 3</button>
+                <button class="ansbtn">Answer 4</button>
+            </div>
+            <div id="correct" class="hide correct">
+                <h2>Correct!</h2>
+            </div>
+            <div id="wrong" class="hide">
+                <h2>Wrong!</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div id="all-done-container" class="hide">
+            <h1>All Done!</h1>
+            <h1 id="finalScore"> Your final score is 0</h1>
+            <form class="end-form-container">
+                <h1>Enter Initials:</h1>
+                <input id="initials" placeholder="Enter Initials" aria-label="highScoreName"></input>
+                <button id="saveScoreBtn" class="btn" type="submit" onclick="saveHighScore(event)">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/quiz.js"></script>
 </body>
 
 </html>
