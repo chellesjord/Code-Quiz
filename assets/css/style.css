@@ -9,9 +9,21 @@
   --secondary: #BF5FE3;
 }
 
+header {
+  margin: 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: medium;
+}
+
 #highscore {
   color: var(--secondary);
   text-align: left;
+}
+
+#timer {
+  text-align: right;
 }
 
 h1 {
@@ -55,10 +67,6 @@ h1 {
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
-}
-
-.btn-area {
-  
 }
 
 .ansbtn {
