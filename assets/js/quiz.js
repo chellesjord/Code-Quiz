@@ -98,9 +98,9 @@ function selectAnswer(e) {
         //stop time and go to All Done screen.
         localStorage.setItem("mostRecentScore", time)
         clearInterval(Timer)
-        console.log(mostRecentScore)
         questionContainerElement.classList.add("hide")
         alldoneContainerElement.classList.remove("hide")
+        finalScore.innerText = "Your final score is " + time
     }
 }
 
@@ -143,17 +143,14 @@ const questions = [
     }
 ]
 
-localStorage.getItem = mostRecentScore
-finalScore.innerText = "Your final score is " + mostRecentScore
-
 intials.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !intials.value
 })
 
-saveHighScore = e => {
+var saveHighScore = e => {
     e.preventDefault()
     const score = {
-        score: mostRecentScore,
+        score: time,
         name: intials.value,
     }
 
@@ -169,6 +166,9 @@ saveHighScore = e => {
     console.log(highScores)
     window.location.assign("./highscores.html")
 }
+
+// saveHighScore()
+
 
 
 
