@@ -4,7 +4,7 @@ This app will run in the browser, and will feature dynamically updated HTML and 
 
 Link to site: https://chellesjord.github.io/Code-Quiz/
 
-![](.\assets\images\Code-Quiz-Preview.gif)
+![](./assets/images/Code-Quiz-Preview.gif)
 
 
 
